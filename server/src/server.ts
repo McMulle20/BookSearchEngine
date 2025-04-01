@@ -10,7 +10,7 @@ import { expressMiddleware } from "@apollo/server/express4";
 import { typeDefs, resolvers } from "./schemas/index.js";
 
 // Import Authentication
-import { authenticateToken } from "./utils/auth.js"; // Ensure authMiddleware is properly imported
+import { authenticateToken } from "./services/auth.js"; // Ensure authMiddleware is properly imported
 
 // Load Environment Variables
 const PORT = process.env.PORT || 3001;
@@ -30,16 +30,14 @@ const startApolloServer = async () => {
   await server.start();
   console.log("✅ Apollo Server started successfully");
 
-  // Apply Middleware for Apollo Server (GraphQL)
+  // Apply Middleware for Apollo Server (GraphQL) (needs to be revisited)
   app.use(
     "/graphql",
     expressMiddleware(server, {
-      context: async ({ req }) => {
-        const user = authenticateToken(req);
-        return { user };
-      },
+      context: authenticateToken as any,
     })
   );
+
 
   // Serve Static Files from ../client/build
   if (process.env.NODE_ENV === "production") {
