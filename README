@@ -26,15 +26,17 @@ Steps to install and set up your project:
 
 ## Usage
 
-Once the application is set up and running, you can interact with the API to manage users, thoughts, reactions, and friendships.
+Once the application is set up and running, users can:
 
-GET routes allow you to fetch users and thoughts, displaying the data in a formatted JSON response.
+Search for books: Enter a book title, author, or keyword to retrieve a list of books with their title, author, description, image, and a link to the Google Books site.
 
-POST routes enable you to create new users, thoughts, reactions, and friendships by sending the appropriate data to the API.
+Login/Signup: Create an account with a username, email, and password, or log into an existing account.
 
-PUT and DELETE routes allow you to update and remove users, thoughts, reactions, and friendships from the database.
+Save Books: Save a book to your account by clicking the Save button on the book search results.
 
-You can test these routes using tools like Insomnia or Postman to ensure that the application properly handles creating, updating, and deleting data. The changes will be reflected in your MongoDB database. The server will sync models with the database on start-up to ensure data integrity.
+View Saved Books: View a list of all books you have saved, along with the option to remove them.
+
+Logout: Logout to end your session.
 
 ## Credits
 

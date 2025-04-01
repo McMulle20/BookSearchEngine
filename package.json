@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/graphql": "^14.2.3",
     "concurrently": "^8.2.0"
   },
   "dependencies": {
