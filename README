@@ -1,0 +1,64 @@
+# Google-Books-Search-Engine(18)
+
+## Description
+The Google Books Search Engine allows users to search for books, save them to their account, and view their saved books. It uses a GraphQL API built with Apollo Server to fetch and modify data. The application is built with the MERN stack (MongoDB, Express, React, Node.js) and integrates with the Google Books API to perform book searches. Users can sign up, log in, and manage their saved books through an intuitive interface.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+Steps to install and set up your project:
+1. Clone the repository: git clone [link](https://github.com/McMulle20/NetworkAPI.git).
+   
+2. Navigate to the project directory
+
+3. Install dependencies: npm install
+
+4. Set up MongoDB using MongoDB Atlas and get your connection string.
+
+5. Add environment variables for MongoDB and JWT secrets in the .env file
+
+6. Build and run the project: npm run dev
+
+## Usage
+
+Once the application is set up and running, you can interact with the API to manage users, thoughts, reactions, and friendships.
+
+GET routes allow you to fetch users and thoughts, displaying the data in a formatted JSON response.
+
+POST routes enable you to create new users, thoughts, reactions, and friendships by sending the appropriate data to the API.
+
+PUT and DELETE routes allow you to update and remove users, thoughts, reactions, and friendships from the database.
+
+You can test these routes using tools like Insomnia or Postman to ensure that the application properly handles creating, updating, and deleting data. The changes will be reflected in your MongoDB database. The server will sync models with the database on start-up to ensure data integrity.
+
+## Credits
+
+BootCamp Guide and the links provided: 
+Xpert Learning Assistant
+https://www.npmjs.com/package/mongoose
+https://www.npmjs.com/package/express
+https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide
+## License
+
+This project is licensed under the MIT License.
+
+---
+## How to Contribute
+
+Follow these steps to contribute to the project:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-name).
+Commit your changes (git commit -am 'Add new feature').
+Push the branch to your fork (git push origin feature-name).
+Submit a pull request. For detailed guidelines on contributing, you can refer to the Contributor Covenant.
+
+## Tests
+
+walkthrought: 
+https://drive.google.com/file/d/1aI4S08o-4xTvYHRSQBeTKo5grEE36Puo/view
